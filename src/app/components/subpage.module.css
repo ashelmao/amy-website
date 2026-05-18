@@ -1,0 +1,217 @@
+/* Shared shell for subpages */
+.shell {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 6rem 1.5rem 4rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 760px;
+  background: rgba(255, 250, 245, 0.94);
+  color: #1a0a2a;
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 30px 80px rgba(20, 5, 40, 0.25);
+}
+
+.eyebrow {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #6b3f9c;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: "Times New Roman", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin-bottom: 2.5rem;
+}
+
+.title em {
+  font-style: italic;
+  color: #6b3f9c;
+}
+
+.lede {
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 1.375rem;
+  line-height: 1.55;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #2a1840;
+}
+
+.body {
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.body p {
+  margin-bottom: 1.25rem;
+}
+
+.body p + p {
+  text-indent: 1.5em;
+}
+
+.divider {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #6b3f9c;
+  margin: 2.5rem 0;
+}
+
+/* Art grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tile {
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(
+    135deg,
+    rgba(107, 63, 156, 0.85),
+    rgba(180, 130, 220, 0.85)
+  );
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+}
+
+.tile:nth-child(3n+1) {
+  background: linear-gradient(135deg, #6b3f9c, #c8a8e8);
+}
+.tile:nth-child(3n+2) {
+  background: linear-gradient(135deg, #2a1840, #6b3f9c);
+}
+.tile:nth-child(3n) {
+  background: linear-gradient(135deg, #a87cc8, #f0d8ff);
+  color: #1a0a2a;
+}
+
+.tile .caption {
+  font-family: "Times New Roman", Georgia, serif;
+  font-style: italic;
+  font-size: 1.125rem;
+}
+
+.tile .meta {
+  font-family: "Times New Roman", serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-top: 0.25rem;
+}
+
+/* Publications list */
+.pub {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 1.5rem 0;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.5rem;
+  align-items: baseline;
+}
+
+.pub:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.pub .year {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  color: #6b3f9c;
+}
+
+.pub h3 {
+  font-family: "Times New Roman", Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.pub p {
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #3a2050;
+}
+
+.pub a {
+  color: #6b3f9c;
+  border-bottom: 1px solid currentColor;
+}
+
+/* Contact */
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contactItem {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding-top: 1rem;
+}
+
+.contactItem .key {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #6b3f9c;
+  margin-bottom: 0.5rem;
+}
+
+.contactItem .val {
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 1.25rem;
+}
+
+.contactItem .val a:hover {
+  color: #6b3f9c;
+}

@@ -1,20 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./page.module.css";
+import Link from "next/link";
+import styles from "./Nav.module.css";
 
 const navItems = [
+  { label: "home", href: "/" },
   { label: "about", href: "/about" },
   { label: "art", href: "/art" },
   { label: "publications", href: "/publications" },
   { label: "contact", href: "/contact" },
 ];
 
-export default function Variant2() {
+export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <main className={styles.main}>
+    <>
       <button
         type="button"
         aria-label="Toggle menu"
@@ -31,19 +33,14 @@ export default function Variant2() {
         <ul>
           {navItems.map((item, i) => (
             <li key={item.label} style={{ transitionDelay: `${i * 60}ms` }}>
-              <a href={item.href} onClick={() => setOpen(false)}>
+              <Link href={item.href} onClick={() => setOpen(false)}>
                 <span className={styles.num}>0{i + 1}</span>
                 <span className={styles.label}>{item.label}</span>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
       </nav>
-
-      <h1 className={styles.name}>
-        <span>amy</span>
-        <span>mcintyre</span>
-      </h1>
-    </main>
+    </>
   );
 }
