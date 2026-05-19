@@ -13,43 +13,48 @@ export default function AboutPage() {
         <article className={styles.card}>
           <p className={styles.eyebrow}>01 — About</p>
           <h1 className={styles.title}>
-            On <em>colour</em>, glass, and the slow business of looking
+            On <em>family</em>, trauma, and the simple pleasures
           </h1>
 
           <p className={styles.lede}>
-            Amy McIntyre is an artist and writer based on the south coast,
-            working with blown glass, watercolour, and the quiet drift of
-            language between them.
+            Amy McIntyre holds an MFA in Creative Nonfiction from Vermont
+            College of Fine Arts. She writes primarily about family and
+            trauma, but takes time to explore the simple pleasures — like
+            ice cream!
           </p>
 
           <div className={styles.body}>
             <p>
-              Her practice began in studio glasswork and has since opened out
-              to include painting, printed essays, and small-press
-              publications. Each medium informs the next: a vessel becomes a
-              paragraph, a paragraph an excuse to mix a new pigment.
+              Amy has been published by <em>Craft Literary</em> and{" "}
+              <em>Past Ten</em>, and before her time at VCFA, her
+              human-interest stories were published by{" "}
+              <em>Seven Mile Satellite</em>.
             </p>
             <p>
-              Recent work has focused on the way light behaves at the edge of
-              a curved surface — the lilac and milk-white of a tipped bowl,
-              the way a horizon refuses to stay where you left it. McIntyre
-              has exhibited in Bristol, Edinburgh, and Copenhagen, and her
-              writing has appeared in <em>Frieze</em>, <em>The White Review</em>,
-              and <em>Granta Online</em>.
+              She is currently at work on a memoir about her experiences with
+              childbirth and early motherhood, and she runs a library on
+              Instagram{" "}
+              <a
+                href="https://instagram.com/KsQreadsBIPOC"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @KsQreadsBIPOC
+              </a>
+              .
             </p>
             <p>
-              She holds an MA in Fine Art from the Royal College of Art and
-              previously read English at Cambridge. When not in the studio,
-              she teaches occasional workshops on hot glass and on the essay
-              as a form.
+              She is primary caregiver to her adult daughter who has Down
+              syndrome and, while raising her family, worked as a
+              photographer. Before children, she developed the women’s line
+              of apparel at Adidas in Portland, Oregon.
             </p>
 
             <span className={styles.divider} />
 
             <p>
-              For commissions, interviews, or studio visits, please use the
-              contact page. Responses can be slow during exhibition months;
-              patience is rewarded with longer letters.
+              Aside from writing, glassblowing is the art medium that gets
+              Amy most fired up!
             </p>
           </div>
         </article>

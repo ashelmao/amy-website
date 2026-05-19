@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 const navItems = [
@@ -10,31 +11,46 @@ const navItems = [
   { label: "contact", href: "/contact" },
 ];
 
-export default function Variant2() {
+export default function Home() {
   const [open, setOpen] = useState(false);
 
   return (
     <main className={styles.main}>
       <button
         type="button"
-        aria-label="Toggle menu"
+        aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         className={`${styles.hamburger} ${open ? styles.hamburgerOpen : ""}`}
         onClick={() => setOpen((v) => !v)}
       >
-        <span />
-        <span />
-        <span />
+        <span className={styles.bars} aria-hidden>
+          <span />
+          <span />
+          <span />
+        </span>
       </button>
 
-      <nav className={`${styles.menu} ${open ? styles.menuOpen : ""}`}>
+      <div
+        className={`${styles.overlay} ${open ? styles.overlayOpen : ""}`}
+        onClick={() => setOpen(false)}
+        aria-hidden
+      />
+
+      <nav
+        className={`${styles.menu} ${open ? styles.menuOpen : ""}`}
+        aria-hidden={!open}
+      >
         <ul>
           {navItems.map((item, i) => (
             <li key={item.label} style={{ transitionDelay: `${i * 60}ms` }}>
-              <a href={item.href} onClick={() => setOpen(false)}>
+              <Link
+                href={item.href}
+                onClick={() => setOpen(false)}
+                tabIndex={open ? 0 : -1}
+              >
                 <span className={styles.num}>0{i + 1}</span>
                 <span className={styles.label}>{item.label}</span>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
