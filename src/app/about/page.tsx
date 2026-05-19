@@ -13,7 +13,7 @@ export default function AboutPage() {
         <article className={styles.card}>
           <p className={styles.eyebrow}>01 — About</p>
           <h1 className={styles.title}>
-            On <em>family</em>, trauma, and the simple pleasures
+            On <em>motherhood</em>, memory, and the small joys in between
           </h1>
 
           <p className={styles.lede}>
