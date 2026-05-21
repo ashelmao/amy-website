@@ -1,0 +1,94 @@
+.main {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Times New Roman", Georgia, serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+  line-height: 0.88;
+  pointer-events: none;
+  user-select: none;
+}
+
+.amy {
+  font-style: italic;
+  font-size: clamp(5rem, 18vw, 14rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.mcintyre {
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-top: 0.4rem;
+}
+
+/* Bottom nav bar */
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(10, 2, 20, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 1.1rem 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.25s ease;
+}
+
+.navItem:last-child {
+  border-right: none;
+}
+
+.navItem:hover {
+  background: rgba(107, 63, 156, 0.35);
+}
+
+.num {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: #c4a0e8;
+}
+
+.label {
+  font-family: "Times New Roman", Georgia, serif;
+  font-style: italic;
+  font-size: 1.35rem;
+  font-weight: 400;
+}

@@ -1,0 +1,118 @@
+.main {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Crosshair dividers */
+.hLine {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.vLine {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Each quadrant */
+.quadrant {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  padding: 1.75rem 2rem;
+  transition: background 0.3s ease;
+  z-index: 2;
+}
+
+.quadrant:hover {
+  background: rgba(107, 63, 156, 0.22);
+}
+
+.tl { top: 0;   left: 0;   align-items: flex-start; justify-content: flex-start; }
+.tr { top: 0;   right: 0;  align-items: flex-end;   justify-content: flex-start; }
+.bl { bottom: 0; left: 0;  align-items: flex-start; justify-content: flex-end; }
+.br { bottom: 0; right: 0; align-items: flex-end;   justify-content: flex-end; }
+
+.num {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: #c4a0e8;
+  margin-bottom: 0.3rem;
+}
+
+.label {
+  font-family: "Times New Roman", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.5rem, 3.5vw, 2.75rem);
+  font-weight: 400;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  transition: color 0.25s;
+}
+
+.quadrant:hover .label {
+  color: #e8d0ff;
+}
+
+/* Name at center intersection */
+.name {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  user-select: none;
+  font-family: "Times New Roman", Georgia, serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+  line-height: 0.9;
+  background: rgba(10, 2, 20, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 0.6rem 1.4rem 0.8rem;
+}
+
+.amy {
+  font-style: italic;
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.mcintyre {
+  font-size: clamp(0.85rem, 1.8vw, 1.4rem);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-top: 0.3rem;
+}

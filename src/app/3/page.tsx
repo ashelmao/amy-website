@@ -8,7 +8,7 @@ const navItems = [
   { label: "contact", href: "/contact", num: "04" },
 ];
 
-export default function Home() {
+export default function Home3() {
   return (
     <main className={styles.main}>
       <div className={styles.group}>

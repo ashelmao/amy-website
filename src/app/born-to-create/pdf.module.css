@@ -1,0 +1,16 @@
+/* Make the card grow to fill available height for PDF viewing */
+.card {
+  max-width: 860px !important;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.viewer {
+  width: 100%;
+  flex: 1;
+  min-height: 70vh;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 0.5rem;
+}

@@ -13,7 +13,7 @@ export default function ContactPage() {
         <article className={styles.card}>
           <p className={styles.eyebrow}>04 — Contact</p>
           <h1 className={styles.title}>
-            Letters, <em>commissions</em>, and studio visits
+            Calls, <em>letters</em>, any kind of musings
           </h1>
 
           <p className={styles.lede}>

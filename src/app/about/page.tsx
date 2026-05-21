@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Nav from "../components/Nav";
 import styles from "../components/subpage.module.css";
 
@@ -16,6 +17,15 @@ export default function AboutPage() {
             On <em>motherhood</em>, memory, and the small joys in between
           </h1>
 
+          <Image
+            src="/amy.jpg"
+            alt="Portrait of Amy McIntyre"
+            width={160}
+            height={200}
+            className={styles.portrait}
+            priority
+          />
+
           <p className={styles.lede}>
             Amy McIntyre holds an MFA in Creative Nonfiction from Vermont
             College of Fine Arts. She writes primarily about family and
@@ -32,8 +42,8 @@ export default function AboutPage() {
             </p>
             <p>
               She is currently at work on a memoir about her experiences with
-              childbirth and early motherhood, and she runs a library on
-              Instagram{" "}
+              childbirth and early motherhood, and she enjoys running a local
+              community library on Instagram{" "}
               <a
                 href="https://instagram.com/KsQreadsBIPOC"
                 target="_blank"
@@ -50,12 +60,6 @@ export default function AboutPage() {
               of apparel at Adidas in Portland, Oregon.
             </p>
 
-            <span className={styles.divider} />
-
-            <p>
-              Aside from writing, glassblowing is the art medium that gets
-              Amy most fired up!
-            </p>
           </div>
         </article>
       </div>

@@ -30,12 +30,11 @@ export default function PublicationsPage() {
         <article className={styles.card}>
           <p className={styles.eyebrow}>03 — Publications</p>
           <h1 className={styles.title}>
-            Essays, <em>chapbooks</em>, and the occasional review
+            Selected <em>essays</em> and interviews
           </h1>
 
           <p className={styles.lede}>
-            Writing tends to arrive in the gaps between objects. Below is a
-            selected list, most recent first.
+            A running list of published work, most recent first.
           </p>
 
           <div>

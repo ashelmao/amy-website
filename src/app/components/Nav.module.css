@@ -2,8 +2,8 @@
   position: fixed;
   top: 1rem;
   left: 1rem;
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,14 +20,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 28px;
-  height: 20px;
+  width: 32px;
+  height: 24px;
   pointer-events: none;
 }
 
 .bars > span {
   display: block;
-  height: 1px;
+  height: 2px;
   background: #ffffff;
   transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1),
     opacity 0.3s ease, width 0.4s cubic-bezier(0.7, 0, 0.3, 1);

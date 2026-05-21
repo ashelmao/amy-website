@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 0.5rem;
+}
+
+.viewer {
+  width: 100%;
+  height: 70vh;
+  border: none;
+}
+
+/* When the container itself is fullscreen */
+.container:fullscreen .viewer,
+.container:-webkit-full-screen .viewer {
+  height: 100%;
+  flex: 1;
+}
+
+.container:fullscreen,
+.container:-webkit-full-screen {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 2rem 1rem;
+}
+
+.fullscreenBtn {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  z-index: 10;
+  background: rgba(255, 250, 245, 0.92);
+  border: 1px solid rgba(107, 63, 156, 0.2);
+  border-radius: 4px;
+  color: #6b3f9c;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.fullscreenBtn:hover {
+  background: #6b3f9c;
+  color: #fff;
+}
