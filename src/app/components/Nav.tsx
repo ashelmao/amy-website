@@ -7,7 +7,7 @@ import styles from "./Nav.module.css";
 const navItems = [
   { label: "home", href: "/", num: null },
   { label: "about", href: "/about", num: "01" },
-  { label: "art", href: "/art", num: "02" },
+  { label: "art/craft", href: "/art", num: "02" },
   { label: "publications", href: "/publications", num: "03" },
   { label: "contact", href: "/contact", num: "04" },
 ];

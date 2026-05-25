@@ -122,3 +122,76 @@
   width: 48px;
   background: #c4a0e8;
 }
+
+/* ── Mobile (phones up to 640px) ─────────────────────────────── */
+@media (max-width: 640px) {
+  .main {
+    overflow-y: auto;
+    height: 100dvh;
+  }
+
+  .group {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    min-height: 100dvh;
+    padding: 2.5rem 1.25rem 2rem;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .masthead {
+    align-items: flex-start;
+  }
+
+  .name {
+    flex-direction: column;
+    gap: 0;
+    line-height: 1.05;
+  }
+
+  .amy,
+  .mcintyre {
+    font-size: clamp(3.2rem, 18vw, 5rem);
+    letter-spacing: -0.02em;
+  }
+
+  /* Stack nav items vertically on mobile */
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: none;
+  }
+
+  .navItem {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 0.5rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .navItem:last-child {
+    border-bottom: none;
+  }
+
+  .num {
+    font-size: 0.6rem;
+    min-width: 1.8rem;
+  }
+
+  .label {
+    font-size: clamp(1.3rem, 6vw, 1.8rem);
+    flex: 1;
+  }
+
+  .dash {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}

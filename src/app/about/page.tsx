@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Nav from "../components/Nav";
 import styles from "../components/subpage.module.css";
 
@@ -16,15 +15,6 @@ export default function AboutPage() {
           <h1 className={styles.title}>
             On <em>motherhood</em>, memory, and the small joys in between
           </h1>
-
-          <Image
-            src="/amy.jpg"
-            alt="Portrait of Amy McIntyre"
-            width={160}
-            height={200}
-            className={styles.portrait}
-            priority
-          />
 
           <p className={styles.lede}>
             Amy McIntyre holds an MFA in Creative Nonfiction from Vermont
