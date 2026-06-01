@@ -216,7 +216,7 @@
 @media (max-width: 560px) {
   .contactLayout {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.75rem;
   }
 }
 
@@ -285,4 +285,18 @@
 
 .contactItem .val a:hover {
   color: #6b3f9c;
+}
+
+@media (max-width: 560px) {
+  .contactPhoto {
+    order: 2;
+  }
+
+  .contactDetails {
+    order: 1;
+  }
+
+  .contactPortrait {
+    width: min(150px, 55vw);
+  }
 }
