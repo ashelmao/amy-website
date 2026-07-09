@@ -2,6 +2,7 @@ import Nav from "../components/Nav";
 import styles from "../components/subpage.module.css";
 import pdfStyles from "../born-to-create/pdf.module.css";
 import PdfViewer from "../components/PdfViewer";
+import { pdfPagePaths } from "../components/pdfPages";
 
 export const metadata = {
   title: "Organization in Memoir — Amy McIntyre",
@@ -17,7 +18,12 @@ export default function OrganizationInMemoirPage() {
           <h1 className={styles.title}>
             <em>Organization</em> in Memoir
           </h1>
-          <PdfViewer src="/Organization in Memoir for website.pdf" title="Organization in Memoir" backHref="/art" />
+          <PdfViewer
+            pages={pdfPagePaths("organization-in-memoir", 22)}
+            pdfHref="/Organization in Memoir for website.pdf"
+            title="Organization in Memoir"
+            backHref="/art"
+          />
         </article>
       </div>
     </div>

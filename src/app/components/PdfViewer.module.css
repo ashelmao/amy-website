@@ -30,19 +30,6 @@
   box-shadow: 0 4px 16px rgba(20, 5, 40, 0.12);
 }
 
-.status {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1.5rem;
-  font-family: "Times New Roman", Georgia, serif;
-  font-style: italic;
-  color: #6b3f9c;
-}
-
 /* When the container itself is fullscreen */
 .container:fullscreen .viewer,
 .container:-webkit-full-screen .viewer {
@@ -58,11 +45,16 @@
   padding: 2.5rem 2rem 1rem;
 }
 
-.fullscreenBtn {
+.controls {
   position: absolute;
   top: 0.6rem;
   right: 0.6rem;
   z-index: 10;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.iconBtn {
   background: rgba(255, 250, 245, 0.92);
   border: 1px solid rgba(107, 63, 156, 0.2);
   border-radius: 4px;
@@ -76,7 +68,7 @@
   transition: background 0.2s, color 0.2s;
 }
 
-.fullscreenBtn:hover {
+.iconBtn:hover {
   background: #6b3f9c;
   color: #fff;
 }
@@ -118,7 +110,7 @@
     font-size: 0.95rem;
   }
 
-  .fullscreenBtn {
+  .controls {
     top: max(0.6rem, env(safe-area-inset-top));
     right: max(0.6rem, env(safe-area-inset-right));
   }
