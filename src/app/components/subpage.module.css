@@ -204,7 +204,7 @@
   border-bottom: 1px solid currentColor;
 }
 
-.readLink {
+.pub .readLink {
   display: inline-block;
   margin-top: 0.6rem;
   font-family: "Times New Roman", Georgia, serif;
@@ -213,14 +213,16 @@
   border-bottom: 1px solid currentColor;
 }
 
-@media (max-width: 560px) {
-  .readLink {
+/* Phones — matches the home page breakpoint */
+@media (max-width: 640px) {
+  .pub .readLink {
     font-size: 0.8rem;
     letter-spacing: 0.05em;
-    padding: 0.45rem 1rem;
+    padding: 0.45rem 1.1rem;
     background: #6b3f9c;
     color: #fff;
     border: 1px solid #6b3f9c;
+    border-bottom: 1px solid #6b3f9c;
     border-radius: 999px;
     box-shadow: 0 3px 10px rgba(107, 63, 156, 0.3);
   }
