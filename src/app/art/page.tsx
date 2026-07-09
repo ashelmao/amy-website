@@ -38,10 +38,10 @@ export default function ArtPage() {
                 <div className={styles.year}>{p.year}</div>
                 <div>
                   <h3>{p.title}</h3>
-                  <p>
-                    {p.subtitle}{" "}
-                    <Link href={p.href}>Read →</Link>
-                  </p>
+                  <p>{p.subtitle}</p>
+                  <Link href={p.href} className={styles.readLink}>
+                    Read →
+                  </Link>
                 </div>
               </div>
             ))}

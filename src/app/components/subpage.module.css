@@ -204,6 +204,35 @@
   border-bottom: 1px solid currentColor;
 }
 
+.pub .readLink {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 1rem;
+  color: #6b3f9c;
+  border-bottom: 1px solid currentColor;
+}
+
+/* Phones — square, semi-opaque, outlined tile echoing the home page nav */
+@media (max-width: 640px) {
+  .pub .readLink {
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.6rem 1.1rem;
+    color: #6b3f9c;
+    background: rgba(107, 63, 156, 0.08);
+    border: 1px solid rgba(107, 63, 156, 0.45);
+    border-radius: 0;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: none;
+  }
+}
+
 /* Contact */
 .contactLayout {
   display: grid;
