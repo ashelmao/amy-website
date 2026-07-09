@@ -1,9 +1,18 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import styles from "./PdfViewer.module.css";
 
-export default function PdfViewer({ src, title }: { src: string; title: string }) {
+export default function PdfViewer({
+  src,
+  title,
+  backHref,
+}: {
+  src: string;
+  title: string;
+  backHref?: string;
+}) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -23,6 +32,15 @@ export default function PdfViewer({ src, title }: { src: string; title: string }
 
   return (
     <div ref={containerRef} className={styles.container}>
+      {backHref && (
+        <Link href={backHref} className={styles.backBtn} aria-label="Back to art">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12" />
+            <polyline points="12 19 5 12 12 5" />
+          </svg>
+          Art
+        </Link>
+      )}
       <button
         className={styles.fullscreenBtn}
         onClick={toggleFullscreen}

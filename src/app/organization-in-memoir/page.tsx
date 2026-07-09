@@ -17,7 +17,7 @@ export default function OrganizationInMemoirPage() {
           <h1 className={styles.title}>
             <em>Organization</em> in Memoir
           </h1>
-          <PdfViewer src="/Organization in Memoir for website.pdf" title="Organization in Memoir" />
+          <PdfViewer src="/Organization in Memoir for website.pdf" title="Organization in Memoir" backHref="/art" />
         </article>
       </div>
     </div>

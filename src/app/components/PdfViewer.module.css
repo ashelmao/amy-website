@@ -49,3 +49,46 @@
   background: #6b3f9c;
   color: #fff;
 }
+
+.backBtn {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .container {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    margin: 0;
+    border-top: none;
+    background: #fff;
+  }
+
+  .viewer {
+    height: 100dvh;
+  }
+
+  .backBtn {
+    position: absolute;
+    top: max(0.6rem, env(safe-area-inset-top));
+    left: 0.6rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: rgba(255, 250, 245, 0.92);
+    border: 1px solid rgba(107, 63, 156, 0.2);
+    border-radius: 999px;
+    padding: 0.45rem 0.9rem 0.45rem 0.65rem;
+    color: #6b3f9c;
+    text-decoration: none;
+    font-family: "Times New Roman", Georgia, serif;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+
+  .fullscreenBtn {
+    top: max(0.6rem, env(safe-area-inset-top));
+    right: max(0.6rem, env(safe-area-inset-right));
+  }
+}
