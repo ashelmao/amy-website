@@ -15,7 +15,7 @@ const pieces = [
   },
   {
     year: "2022",
-    title: "ORGANIZATION IN MEMOIR",
+    title: "Organization in Memoir",
     subtitle: "A Look at Form Choices in Memoir, along with a Focused Look at Certain Authors and the Structural and Form Choices They Made",
     href: "/organization-in-memoir",
   },
